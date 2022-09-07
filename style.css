@@ -1,3 +1,104 @@
+* {box-sizing: border-box}
+
 body {
-    background-color: lightgray;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.sidebar {
+    width: 40vw;
+    height: 100%;
+    background-image: url(sebastien-goldberg-CoE79_lhTJM-unsplash.jpg);
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    flex-direction: column;
+}
+
+.main > div {
+    position: relative;
+    padding: 0 50px;
+}
+
+.main > div:nth-child(odd){
+    padding: 40px 50px;
+}
+
+.main p {
+    font-size: 19px;
+}
+
+@media (max-width: 700px) { 
+    .main p {
+        font-size: 17px;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 50px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 5px 10px 9px #8888883d;
+}
+
+.container h2 {
+    flex: 1 0 100%;
+    align-self: stretch;
+    margin-top: 10px;
+}
+
+
+
+.col{
+    width: 50%;
+    height: 20vh;
+}
+
+@media (max-width: 700px) { 
+    .col {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+  input {
+    width: 84%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: rgb(232, 232, 232);
+  }
+
+  label {
+    display: block;
+    font-size: 13px;
+  }
+
+button {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(124, 196, 216);
+    color: white;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: rgb(107, 164, 179);
 }
