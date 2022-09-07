@@ -10,42 +10,49 @@
 <body>
     
 <div class="sidebar">
-<a href="https://unsplash.com/photos/CoE79_lhTJM">Photo by Sébastien Goldberg</a>
+    <div class="banner">
+        <img src="logo.svg"><span>SALVATION</span></div>
+
+    <span class="img-source">Photo by <a href="https://unsplash.com/photos/CoE79_lhTJM">Sébastien Goldberg</a></span>
 
 </div>
+ 
+<div class="main">  
 
-<div class="main">
-    <div class="top">
-        <p>Sign up, Mate! Give us your data and in turn we will give you happiness, richess, bitches - whatever your current most prevalent desire is - we got it. <br>Come on, there's not time like the present.<br><br>Do it <i>now</i>.</p>
+   <div class="top">
+    <form action="#" method="get"> 
+        <p>Sign up, friend. Join us. We have everything you desire. You will never be wanting for anything again. Come on, there's not time like the present.<br><br><b>Do it <i>now</i>.</b></p>
     </div>
-    <form action="#" method="get">
+
     <div class="container">
         <h2>Sign up</h2>
+        
             <div class="col">
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" required>
                 <label for="password">Password</label>
                 <input type="password" name="password" required>
             </div>
 
             <div class="col">
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
                 <label for="phonenumber">Phone Number</label>
                 <input type="tel" name="phonenumber" required>
                 <label for="passwordvalid">Confirm Password</label>
                 <input type="password" name="passwordvalid" required>
-
             </div>
-    </div></form>
+        
+    </div>
     <div class="bottom">
-        <button>Create Account</button>
+        <button type="submit">Create Account</button>
         Already have an Account? <a href="">Log in</a>
     </div>
-</div>
 
+</form>
+</div>
 
 </body>
 </html>
